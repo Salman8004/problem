@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="auto1()">Click</button>
+    <H1 id="show1">Show 1</H1>
+    <H1 id="show2">Show 2</H1>
+    <H1 id="summ">Sum</H1>
+
+    <SCript>
+              
+            function auto1() {
+            let a1= []
+            let a2= []
+            let sum= []
+
+              for (let index = 0; index < 10; index++) {
+                a1.push(Math.floor(Math.random()*10))
+            }document.getElementById('show1').innerHTML=a1
+              
+            for (let index = 0; index <10; index++) {
+                a2.push( Math.floor(Math.random()*100))
+            }document.getElementById('show2').innerHTML=a2
+
+            for (let index = 0; index < 10; index++) {
+                sum.push(a1+a2)
+            }document.getElementById('summ').innerHTML=sum
+        }
+    </SCript>
+     <button onclick="auto()">Click</button>
+     <H1 id="one">Show 1</H1>
+     <H1 id="two">Show 2</H1>
+     <H1 id="three">Sum</H1>
+ 
+     <SCript>
+               
+             function auto() {
+             let a1= []
+             let a2= []
+             let sum= []
+ 
+               for (let index = 0; index < 10; index++) {
+                 a1.push(Math.floor(Math.random()*10))
+             }document.getElementById('one').innerHTML=a1
+               
+             for (let index = 0; index <10; index++) {
+                 a2.push( Math.floor(Math.random()*100))
+             }document.getElementById('two').innerHTML=a2
+ 
+             for (let index = 0; index < 10; index++) {
+                 sum.push(a1[index]+a2[index])
+             }document.getElementById('three').innerHTML=sum
+         }
+     </SCript>
+</body>
